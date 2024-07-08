@@ -52,11 +52,26 @@ export default function NavigationBar() {
       </div>
 
       <ul className={showNavigation ? "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center" : "hidden"}>
-        <li className="py-6 text-4xl">Home</li>
-        <li className="py-6 text-4xl">About</li>
-        <li className="py-6 text-4xl">Experience</li>
-        <li className="py-6 text-4xl">Skills</li>
-        <li className="py-6 text-4xl">Contact</li>
+        <li className="py-6 text-4xl">
+          <Link to="home" smooth={true} onClick={() => setShowNavigation(false)} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link to="work" smooth={true} onClick={() => setShowNavigation(false)} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link to="skills" smooth={true} onClick={() => setShowNavigation(false)} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link to="contact" smooth={true} onClick={() => setShowNavigation(false)} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
 
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
