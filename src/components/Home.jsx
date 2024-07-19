@@ -1,5 +1,6 @@
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import Profile from '../assets/profile.jpeg'
+import GradProfile from '../assets/GradProfile.jpg'
 import { Link } from "react-scroll";
 
 
